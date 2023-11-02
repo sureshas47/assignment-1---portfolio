@@ -1,0 +1,471 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px; /* Default font size */
+}
+body p {
+  font-size: 12px;
+}
+body h1 {
+  font-size: 20px;
+}
+body h2 {
+  font-size: 18px;
+}
+
+/* Default styles for mobile and smaller screens */
+header,
+aside,
+main,
+footer {
+  padding: 30px 20px;
+}
+
+header,
+footer {
+  background-color: #1973e7;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stacking items on smaller screens */
+  text-align: center;
+}
+footer {
+  background-color: #262626;
+}
+.social-icons a i {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 0 8px;
+}
+
+.name a {
+  padding-right: 10px;
+  color: white;
+  border-right: 1px solid white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px; /* Space between name and navigation */
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margin on ul */
+}
+
+nav li {
+  display: block;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:link {
+  color: white; /* Unvisited link */
+}
+
+nav a:visited {
+  color: rgb(201, 198, 198); /* Visited link */
+}
+
+nav a:focus {
+  color: yellow; /* Focused link when navigating using keyboard */
+}
+
+nav a:hover {
+  color: orange; /* Hovered link */
+}
+
+nav a:active {
+  color: red; /* Active link when clicked */
+}
+.name:hover {
+  cursor: pointer;
+}
+aside {
+  background-color: #01605e;
+  color: rgb(249, 249, 249);
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  text-align: left;
+}
+.aside-content {
+  text-align: center;
+}
+aside p {
+  text-align: center;
+  width: 100%;
+}
+
+aside h1,
+aside h2 {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+aside h2 {
+  color: #ffffb8;
+  line-height: 1.9;
+}
+
+hr {
+  border: none; /* Remove the default border */
+  border-top: 0.5px solid rgba(234, 233, 233, 0.5); /* Thin line with 50% opacity */
+  opacity: 5;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+aside p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+aside p strong {
+  color: #ffffb8;
+  font-weight: 300;
+}
+
+.aside-content {
+  line-height: 1;
+}
+
+button {
+  background-color: #01605e;
+  border: 1px solid #ffffff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #01605e;
+}
+
+footer p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+main {
+  display: grid;
+  row-gap: 20px;
+}
+.main-profile-section {
+  display: grid;
+  row-gap: 20px;
+  text-align: center;
+}
+.column-left h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.column-left {
+  text-align: center;
+  padding: 30px 20px;
+  /* I explored and applied CSS clip-path property, which is used to define a clipping region for an element, effectively masking its content. It allows to create custom shapes by specifying a path that determines which part of the element is visible.
+   Here, I used the 'polygon' value to create a polygonal shape with specific coordinates to achieve a unique design effect. Also, the '-webkit-clip-path' is included for compatibility with older versions of web browsers. By using clip-path, I created a visually appealing shape in the mobile view, enhancing the design of the webpage. */
+  background: rgb(161, 214, 236);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+.column-left-content h1 {
+  line-height: 0.6;
+}
+.column-left-content p {
+  font-size: 14px;
+}
+
+.column-right img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 100%;
+  box-shadow: 0 12px 4px rgba(101, 4, 4, 0.1);
+}
+
+.blog h1 {
+  text-transform: uppercase;
+  color: #1973e7;
+  text-align: center;
+}
+.blog-post a {
+  color: #8fb9f0;
+}
+
+/* about page */
+.aboutme-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.5rem; /* 1.5 * 20px (font size of of the root element body) */
+}
+
+.card p,
+.card li {
+  font-size: 1rem; /* 1 * 20px */
+  text-align: left;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin: 10px 0;
+}
+.getintouch-section div {
+  background-color: #252521;
+  color: white;
+}
+
+/* topic page */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.video {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.video h2 {
+  margin-top: 20px;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-rows: 100px 1fr 200px;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
+
+    grid-template-areas:
+      "header header "
+      "aside main "
+      "footer footer";
+  }
+
+  .social-icons a i {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    padding: 0 8px; /* Add padding to the left and right */
+  }
+
+  /*  */
+
+  header {
+    grid-area: header;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .name {
+    margin-bottom: 0;
+  }
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    display: inline;
+    margin: 0 20px;
+  }
+
+  /* main */
+  main {
+    /* height: 100vh; */
+    background-color: rgb(248, 248, 248);
+    grid-area: main;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(
+      2,
+      auto
+    ); /* 2 rows with auto height based on contents inside */
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .main-profile-section {
+    display: grid;
+    grid-template-rows: repeat(
+      1,
+      auto
+    ); /* Auto height based on contents inside */
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .column-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-between;
+    padding: 0;
+    /* removing all property of clip-path for desktop view */
+    background: none;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .column-left h3 {
+    color: #070706;
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+  .column-left-content h1 {
+    line-height: 0.6;
+  }
+  .column-left-content p {
+    font-size: 14px;
+  }
+  .column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column-right img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 12px 4px rgba(214, 213, 213, 0.1);
+  }
+
+  .blog {
+    background-color: rgb(3 96 94);
+    padding: 20px 0;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .blog h1 {
+    text-transform: uppercase;
+    color: #ffffb8;
+  }
+  .blog-post a {
+    color: #8fb9f0;
+  }
+
+  aside {
+    text-align: left;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Align items vertically because of flex-direction column. if the flex-direction is row, it will align items horizontally */
+  }
+  aside p {
+    width: 155px;
+    text-align: left;
+  }
+  aside h1,
+  aside h2 {
+    text-align: left;
+  }
+
+  /* footer */
+  footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Align items vertically because of flex-direction column. if the flex-direction is row, it will align items horizontally */
+  }
+
+  /* about page */
+
+  .aboutme {
+    display: grid;
+    grid-template-rows: repeat(
+      2,
+      auto
+    ); /* 2 rows for 2 sections(aboutme and getintouch)  */
+    grid-template-columns: 1fr; /* 1 column for both aboutme and getintouch section*/
+  }
+
+  .aboutme-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    column-gap: 10px;
+  }
+  .card {
+    margin-bottom: 0;
+  }
+
+  /* topic page */
+
+  .main-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
