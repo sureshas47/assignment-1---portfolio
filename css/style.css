@@ -9,9 +9,19 @@ body p {
 }
 body h1 {
   font-size: 20px;
+  color: #1256af;
+  font-weight: 700;
 }
-body h2 {
+body h1 {
+  text-transform: uppercase;
+}
+
+body h2,
+body h3 {
   font-size: 18px;
+  color: #065e7f;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 /* Default styles for mobile and smaller screens */
@@ -24,14 +34,14 @@ footer {
 
 header,
 footer {
-  background-color: #1973e7;
+  background-color: #114d9c;
   color: white;
   display: flex;
   flex-direction: column; /* Stacking items on smaller screens */
   text-align: center;
 }
 footer {
-  background-color: #262626;
+  background-color: #262626; /* update footer background color */
 }
 .social-icons a i {
   color: rgb(255, 255, 255);
@@ -71,7 +81,7 @@ nav a:link {
 }
 
 nav a:visited {
-  color: rgb(201, 198, 198); /* Visited link */
+  color: #ffefd6; /* Visited link */
 }
 
 nav a:focus {
@@ -117,10 +127,12 @@ aside h2 {
 hr {
   border: none; /* Remove the default border */
   border-top: 0.5px solid rgba(234, 233, 233, 0.5); /* Thin line with 50% opacity */
-  opacity: 5;
   padding: 0;
   margin: 0;
   display: flex;
+}
+aside h1 {
+  color: white;
 }
 
 aside p {
@@ -203,7 +215,7 @@ main {
   text-align: center;
 }
 .blog-post a {
-  color: #8fb9f0;
+  color: #1973e7;
 }
 
 /* about page */
@@ -242,6 +254,29 @@ main {
 .getintouch-section div {
   background-color: #252521;
   color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.getintouch-section .getintouch-content {
+  padding: 0 40px;
+}
+.getintouch-section .getintouch-content input {
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: none;
+  font-size: 18px;
+  width: 100%;
+}
+.getintouch-section .getintouch-content button {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.getintouch-section div h3 {
+  color: #14bdfa;
 }
 
 /* topic page */
@@ -249,14 +284,13 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: 20px;
 }
 
 .card {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .card img {
@@ -282,6 +316,7 @@ main {
 }
 .video h2 {
   margin-top: 20px;
+  color: #fff;
 }
 
 video {
@@ -302,6 +337,10 @@ video {
       "header header "
       "aside main "
       "footer footer";
+  }
+
+  body h2 {
+    color: #045e7f;
   }
 
   .social-icons a i {
@@ -362,7 +401,6 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: space-between;
     padding: 0;
     /* removing all property of clip-path for desktop view */
     background: none;
@@ -406,7 +444,10 @@ video {
     color: #ffffb8;
   }
   .blog-post a {
-    color: #8fb9f0;
+    color: #edfdfd;
+  }
+  .blog-post h2 {
+    color: #fff;
   }
 
   aside {
@@ -437,6 +478,7 @@ video {
   /* about page */
 
   .aboutme {
+    padding: 40px;
     display: grid;
     grid-template-rows: repeat(
       2,
@@ -452,12 +494,13 @@ video {
     column-gap: 10px;
   }
   .card {
-    margin-bottom: 0;
+    text-align: center;
   }
 
   /* topic page */
 
   .main-grid-container {
+    padding: 40px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -467,5 +510,12 @@ video {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .getintouch-section .getintouch-content input {
+    width: 400px;
+  }
+  .getintouch-section .getintouch-content button {
+    width: 200px;
   }
 }
